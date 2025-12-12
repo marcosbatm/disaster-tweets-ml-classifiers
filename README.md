@@ -8,7 +8,7 @@ The objective was to apply key concepts from the course by participating in a Ka
 The project consists of four parts:
 
 1. Data Analysis and Visualization
-2. Machine Learning Baseline
+2. Machine Learning Baseline: LogisticRegression
 3. Machine Learning Models: XGBoost and RandomForest
 4. Extras
 
@@ -31,20 +31,24 @@ After that, you should have a project structure similar to the following:
 ```bash
 disaster-tweets-classification/
 │
+├── data/
+│ └── processed/
+├── docs/
+│ ├── docs.md
+│ └── docs.pdf
 ├── notebooks/
 │ ├── 01_visualizations.ipynb
 │ └── ...
-│
-├── data/
-│ └── processed/
-│
+├── visualizations/
+│ ├── 01_wordCloud.png
+│ └── ...
 ├── .gitignore
 ├── LICENSE
 ├── README.md
+├── requirements.txt
 ├── sample_submission.csv
 ├── test.csv
-├── train.csv
-└── requirements.txt
+└── train.csv
 ```
 
 ## Installation
@@ -64,4 +68,12 @@ Install the required dependencies:
 pip install -r requirements.txt
 ```
 
-After that, you're ready to run the notebooks (If this is the first time you run a notebook, you might need to set up `jupyter`).
+After that, you're ready to run the notebooks (If this is the first time you run a notebook, you might need to set up `jupyter`). **Keep in mind some of tihs notebooks have cells that may take several minutes up to one or two hours.**
+
+## Notebooks
+
+All the notebooks are self-explanatory, containing text-cells with descriptions of the objective of the notebook and also sharing the thought process of each code step. However, they are all written in Spanish. A thorough explanation in English is available in the [documentation](docs/docs.pdf).
+
+## License
+
+This repository is licensed under the GNU GPL v3 [license](LICENSE).
